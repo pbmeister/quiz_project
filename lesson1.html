@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1: Introduction to Web Vulnerabilities</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="lesson1.html" class="active">Lesson 1</a>
+    <a href="lesson2.html">Lesson 2</a>
+    <a href="lesson3.html">Lesson 3</a>
+    <a href="lesson4.html">Lesson 4</a>
+    <a href="lesson5.html">Lesson 5</a>
+    <a href="lesson6.html">Lesson 6</a>
+    <a href="lesson7.html">Lesson 7</a>
+    <a href="lesson8.html">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+</div>
+<div class="main-content">
+    <h1 class="lesson-title">Lesson 1: Introduction to Web Vulnerabilities</h1>
+    <p>Web vulnerabilities are weaknesses in websites or web apps that hackers can exploit. They can lead to stolen data, account hijacking, or site manipulation. Understanding these helps developers build safer websites.Content:
+Websites often process data from users, like form submissions or comments. If developers don’t handle input carefully, attackers can exploit weaknesses to steal information, deface pages, or take control of the site. Common vulnerabilities include unvalidated input, weak passwords, and improperly configured servers. Reviewing how input is processed and validated is the first step to securing a website.
+<br>
+Takeaway: Always validate and sanitize input to prevent malicious behavior, and review how your site handles user data.</p><br>
+    <div class="quiz-section" id="quiz1">
+            <p><strong>Scenario:</strong> Meet Alice, a web developer who just launched her first blog site. She hears about “web vulnerabilities” but isn’t sure what they are.</p>
+        <div class="quiz-question">
+            <p>Alice’s friend says: “Web vulnerabilities are weaknesses that can allow hackers to steal data or hijack websites.” Is he correct?</p>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q1"> Yes, that’s exactly it</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> No, vulnerabilities are just cosmetic issues</label>
+        </div><br>
+        <div class="quiz-question">
+            <p>Alice wants to make her site secure. Which of these practices is part of preventing web vulnerabilities?</p>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Ignoring user input</label>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q2"> Validating and sanitizing user input</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Making the site look pretty</label>
+        </div>
+    </div>
+</div>
+<script src="js/quiz.js"></script>
+</body>
+</html>

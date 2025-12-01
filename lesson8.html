@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 8: Common Mistakes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="lesson1.html">Lesson 1</a>
+    <a href="lesson2.html">Lesson 2</a>
+    <a href="lesson3.html">Lesson 3</a>
+    <a href="lesson4.html">Lesson 4</a>
+    <a href="lesson5.html">Lesson 5</a>
+    <a href="lesson6.html">Lesson 6</a>
+    <a href="lesson7.html">Lesson 7</a>
+    <a href="lesson8.html" class="active">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+</div>
+<div class="main-content">
+    <h1 class="lesson-title">Lesson 8: Common Mistakes</h1>
+    <p>Developers often make mistakes like trusting user input or exposing sensitive data. Learning to avoid these mistakes makes websites more secure. Developers sometimes rely solely on client-side checks or ignore proper validation. This creates vulnerabilities that attackers can exploit. Server-side validation and input sanitization are critical because client-side protections can be bypassed easily. Regularly reviewing code and security practices helps prevent these mistakes.
+<br>
+Takeaway: Never trust the client. Always validate input on the server and sanitize data before processing.</p><br>
+    
+    <div class="quiz-section" id="quiz8">
+    <p><strong>Scenario:</strong> Meet Havelock, a developer encountering issues related to Common Mistakes.</p>
+
+        <div class="quiz-question">
+            <p>Havelock publishes a form that relies only on JavaScript checks with no server validation.<br>What mistake has he made?</p>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> Writing code too cleanly</label>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q1"> Trusting client-side validation</label>
+        </div><br>
+
+        <div class="quiz-question">
+            <p>Havelock wants to avoid similar issues.<br>What should he do?</p>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Assume all input is safe</label>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q2"> Add proper server-side validation and sanitization</label>
+        </div>
+
+    </div>
+</div>
+<script src="js/quiz.js"></script>
+</body>
+</html>

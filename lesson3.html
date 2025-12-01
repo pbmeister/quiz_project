@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3: XSS (Basic)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="lesson1.html">Lesson 1</a>
+    <a href="lesson2.html">Lesson 2</a>
+    <a href="lesson3.html" class="active">Lesson 3</a>
+    <a href="lesson4.html">Lesson 4</a>
+    <a href="lesson5.html">Lesson 5</a>
+    <a href="lesson6.html">Lesson 6</a>
+    <a href="lesson7.html">Lesson 7</a>
+    <a href="lesson8.html">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+</div>
+<div class="main-content">
+    <h1 class="lesson-title">Lesson 3: XSS (Basic)</h1>
+    <p>XSS happens when attackers insert malicious scripts into web pages that others see. These scripts can steal cookies, hijack sessions, or change content. Proper input/output handling and sanitization prevent XSS attacks. Cross-Site Scripting (XSS) happens when attackers inject malicious scripts into pages viewed by other users. This can steal session cookies, redirect users, or display unwanted content. Escaping or encoding user-generated content before displaying it prevents scripts from executing in the browser.
+<br>
+Takeaway: Always sanitize output, not just input. Escaping user content protects users from malicious scripts.</p><br>
+    <div class="quiz-section" id="quiz3">
+            <p><strong>Scenario:</strong> Meet Celestine, a developer adding a comment feature to her blog. She wants to make sure no malicious scripts can harm her users.</p>
+        <div class="quiz-question">
+            <p>Celestine allows users to post comments on her blog. A hacker submits &lt;script&gt;alert('hacked')&lt;/script&gt;. What kind of attack is this?</p>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q1"> XSS (Cross-Site Scripting)</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> SQL Injection</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> CSRF</label>
+        </div><br>
+        <div class="quiz-question">
+            <p>Which practice will help Celestine prevent XSS attacks?</p>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q2"> Sanitize user input and escape output</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Let all scripts run freely</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Ignore security warnings</label>
+        </div>
+    </div>
+</div>
+<script src="js/quiz.js"></script>
+</body>
+</html>

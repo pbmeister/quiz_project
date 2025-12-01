@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 6: XSS (Advanced)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="lesson1.html">Lesson 1</a>
+    <a href="lesson2.html">Lesson 2</a>
+    <a href="lesson3.html">Lesson 3</a>
+    <a href="lesson4.html">Lesson 4</a>
+    <a href="lesson5.html">Lesson 5</a>
+    <a href="lesson6.html" class="active">Lesson 6</a>
+    <a href="lesson7.html">Lesson 7</a>
+    <a href="lesson8.html">Lesson 8</a>
+    <a href="lesson9.html">Lesson 9</a>
+    <a href="lesson10.html">Lesson 10</a>
+</div>
+
+<div class="main-content">
+    <h1 class="lesson-title">Lesson 6: XSS (Advanced)</h1>
+    <p>Advanced XSS includes stored or DOM-based attacks where malicious scripts persist or dynamically alter pages. Input validation and security policies reduce the risk. Stored XSS occurs when malicious scripts persist in databases, like forum posts, and execute for every visitor. Advanced XSS can also exploit the DOM to manipulate page behavior dynamically. Implementing a strong Content Security Policy (CSP) restricts where scripts can come from, reducing the risk of these attacks.
+<br>
+Takeaway: Stored and DOM-based XSS are powerful. CSP and output escaping are key defenses.</p><br>
+
+
+    <div class="quiz-section" id="quiz6">
+    <p><strong>Scenario:</strong> Fintan manages a user feedback page. A user submits a message containing a script. The script doesn't immediately run, but later starts executing automatically when other users view the page. Fintan realizes the attack is more advanced than a simple reflected XSS. </p>
+
+        <div class="quiz-question">
+            <p>What type of issue is Fintan most likely dealing with?</p>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q1"> A stored or DOM-based XSS attack that persists or triggers automatically</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q1"> A harmless formatting bug that only affects HTML layout</label>
+        </div><br>
+
+        <div class="quiz-question">
+            <p>What is the most effective step Fintan should take to reduce the impact of this type of attack?</p>
+            <label class="quiz-option" data-correct="true"><input type="radio" name="q2"> Enforce a Content Security Policy (CSP) to block unauthorized script execution</label>
+            <label class="quiz-option" data-correct="false"><input type="radio" name="q2"> Disable all user submissions permanently</label>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
